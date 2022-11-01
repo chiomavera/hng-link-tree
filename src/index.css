@@ -134,7 +134,7 @@ align-items: center;
 padding: 0px;
 gap: 24px;
 width: 1152px;
-height: 576px;
+height: 500px;
 flex: none;
 order: 1;
 align-self: stretch;
@@ -159,7 +159,7 @@ margin-top: 50px;
   flex-grow: 1;
 } 
 
-.social{
+.socials{
   display: flex;
 flex-direction: row;
 justify-content: center;
@@ -186,6 +186,21 @@ footer{
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+
+.footer-text{
+height: 24px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #667085;
+flex: none;
+order: 1;
+flex-grow: 1;
 }
 
 /* code {
