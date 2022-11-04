@@ -27,7 +27,7 @@ main {
   padding: 0px 32px;
   gap: 32px;
   width: 375px;
-  height: 774px;
+  height: 900px;
   flex: none;
   order: 0;
   align-self: stretch;
@@ -132,7 +132,7 @@ align-items: center;
 padding: 0px;
 gap: 24px;
 width: 343px;
-height: 500px;
+height: 567px;
 flex: none;
 order: 1;
 align-self: stretch;
@@ -177,7 +177,7 @@ footer{
   align-items: center;
   padding: 32px 0px 0px;
   gap: 32px;
-   width: 375px; 
+  width: 375px; 
   height: 196px; 
   border-top: 1px solid #EAECF0;
   flex: none;
@@ -234,7 +234,6 @@ flex-grow: 1;
     height: 64px; 
   }
 }
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
+
+
+
