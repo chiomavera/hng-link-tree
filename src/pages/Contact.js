@@ -1,13 +1,19 @@
-const contact = () => {
+import { useState } from 'react';
+const Contact = () => {
   const name = "Chioma Nkanmuo";
 
-  const formSubmit = (e) => {
-    alert('sent');
-    e.preventDefault();
-  }
+  const [message, setMessage] = useState("")
+  const [err, setErr] = useState(false)
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(!message){
+      setErr(true);
+    }else {setErr(false)}
+    alert('sent');
+  }
   return (
-    <section class="container">
+    <section className="container">
       <header className="header">
         <h1 className="heading">Contact Me</h1>
         <p className="description">
@@ -17,46 +23,50 @@ const contact = () => {
 
       {/* form section */}
          <div className="form__section">
-         <form onSubmit={formSubmit} id="form">
-              <div className="form__control">
-                <label for="first_name">First name</label>
+         <form onSubmit={handleSubmit} id="form">
+             <div className='name'>
+             <div className="form__control">
+                <label htmlFor="first_name">First name</label>
                 <input
                   type="text"
                   id="first_name"
                   placeholder="Enter your first name"
-                  required
+                  required 
                 />
+               
               </div>
               <div className="form__control">
-                <label for="last_name">Last name</label>
+                <label htmlFor="last_name">Last name</label>
                 <input
                   type="text"
                   id="last_name"
                   placeholder="Enter your last name"
-                  required
+                  required 
                 />
               </div>
+             </div>
               <div className="form__control">
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input
                   type="email"
                   id="email"
                   placeholder="yourname@email.com"
-                  required
+                  required 
                 />
               </div>
               <div className="form__control message">
-                <label for="message">Message</label>
+                <label htmlFor="message">Message</label>
                 <textarea
                   id="message"
+                  value={message}
                   placeholder="Send me a message and I'll reply as soon as possible..."
-                  required
+                  onChange={(e) => setMessage(e.target.value)}
                 />
-                <small className="error">please enter message</small>
+               {err?<p className='error'>Please enter a message</p>:null}
               </div>
               <div className="check-box">
-                <input type="checkbox" id="checkbox"/>
-                  <label for="checkbox" className="agree">
+                <input type="checkbox" id="checkbox" required />
+                  <label htmlFor="checkbox" className="agree">
                     You agree to providing your data to {name} who may contact
                     you.
                   </label>
@@ -69,4 +79,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;
