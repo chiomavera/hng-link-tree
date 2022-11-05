@@ -10,7 +10,6 @@ const Contact = () => {
     if(!message){
       setErr(true);
     }else {setErr(false)}
-    alert('sent');
   }
   return (
     <section className="container">
