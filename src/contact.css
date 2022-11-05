@@ -84,6 +84,20 @@ label {
   flex-grow: 0;
 }
 
+.name{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 100%;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
 .form__control input {
   display: flex;
   flex-direction: row;
@@ -231,11 +245,32 @@ border-radius: 6px;
 }
 
 .error{
-  font-family: 'Inter';
+font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 20px;
 color: #F83F23;
-visibility: hidden;
+}
+
+
+
+@media (min-width: 768px){
+  .name{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+width: 100%;
+height: 70px;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+  }
+
+  .container{
+    width: 100%;
+  }
 }
