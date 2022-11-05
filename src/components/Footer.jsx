@@ -1,4 +1,4 @@
-const footer = () => {
+const Footer = () => {
     return (
         <footer id="footer">
         <div id="zuriIntershipLogo">
@@ -14,4 +14,4 @@ const footer = () => {
     );
 };
 
-export default footer
+export default Footer
