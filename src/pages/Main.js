@@ -25,9 +25,6 @@ const main = () => {
 
         {/* link section */}
         <div className="links-section">
-        <div>
-          <a className="links" id="btn_twitter" href="https://twitter.com/nkanmuo_vera">Twitter Link</a>
-          </div>
          <div>
           <a className="links" id="btn_zuri" href="https://training.zuri.team/">Zuri Team</a>
           </div>
