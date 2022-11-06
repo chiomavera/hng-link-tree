@@ -25,23 +25,26 @@ const main = () => {
 
         {/* link section */}
         <div className="links-section">
-         <div id="btn_zuri">
-          <a className="links" href="https://training.zuri.team/">Zuri Team</a>
+        <div>
+          <a className="links" id="btn_twitter" href="https://twitter.com/nkanmuo_vera">Twitter Link</a>
           </div>
-         <div id="books">
-          <a className="links"  href="http://books.zuri.team/" title="this is where you find books about design and coding">Zuri books</a>
+         <div>
+          <a className="links" id="btn_zuri" href="https://training.zuri.team/">Zuri Team</a>
           </div>
-         <div id="book_python">
-          <a className="links" href="https://books.zuri.team/python-for-beginners?ref_id=<Chioma Nkanmuo>" title="Get your Python books here, 20% discount">Python Books</a>
+         <div>
+          <a className="links" id="books"  href="http://books.zuri.team/" title="this is where you find books about design and coding">Zuri books</a>
           </div>
-         <div id="pitch">
-          <a className="links" href="https://background.zuri.team/" title="At Zuri Team, we offer a service that runs background checks on Coders">Background Checks for Coders</a>
+         <div>
+          <a className="links"  id="book_python" href="https://books.zuri.team/python-for-beginners?ref_id=<Chioma Nkanmuo>" title="Get your Python books here, 20% discount">Python Books</a>
           </div>
-         <div id="book-design" >
-          <a className="links" href="https://training.zuri.team/" title="Looking for a free book on design? Click here">Design Books</a>
+         <div>
+          <a className="links" id="pitch" href="https://background.zuri.team/" title="At Zuri Team, we offer a service that runs background checks on Coders">Background Checks for Coders</a>
           </div>
-          <div id="contact" >
-          <a className="links" href="/contact" title="Leave me a quick message">Contact Me</a>
+         <div>
+          <a className="links" id="book_design"  href="https://training.zuri.team/" title="Looking for a free book on design? Click here">Design Books</a>
+          </div>
+          <div>
+          <a className="links" id="contact" href="/contact" title="Leave me a quick message">Contact Me</a>
           </div>
         </div> 
       </section>
